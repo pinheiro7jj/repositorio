@@ -1,7 +1,7 @@
 # Madeireira
 
 # descrição
-esse código será para gerenciamento de estoque de uma madeireira, ali funcionários poderão ver que tipo de madeira há no estoque e quais não tem
+Esse código será para gerenciamento de estoque de uma madeireira, ali funcionários poderão ver que tipo de madeira há no estoque e quais não tem.
 
 # contato
 
