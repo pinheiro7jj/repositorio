@@ -3,16 +3,15 @@
 # descrição
 Aqui será apresentado um código, para uma loja de bicicletas, terá uma pagina de cadastro, um carrinho para adicionar suas compras, você poderá ver o preço antes de adicionar ao carrinho e quando você colocar mais de um item no carrinho ele irá somar os preços dos produtos.
 # código
+    import tkinter as tk
+    from tkinter import ttk, messagebox
 
-import tkinter as tk
-from tkinter import ttk, messagebox
 
-
-#Função para abrir a janela de busca de produtos
-def abrir_janela():
-    janela2 = tk.Toplevel()
-    janela2.title("Janela Nova")
-    janela2.configure(bg='white')
+       #Função para abrir a janela de busca de produtos
+       def abrir_janela():
+          janela2 = tk.Toplevel()
+          janela2.title("Janela Nova")
+          janela2.configure(bg='white')
 
     # Carrinho de compras
     carrinho = {}
@@ -121,11 +120,11 @@ def abrir_janela():
     botao_finalizar.grid(row=5, column=0, columnspan=3, pady=10)
 
 
-#Função para abrir a janela de cadastro
-def abrir_cadastro():
-    janela_cadastro = tk.Toplevel()
-    janela_cadastro.title("Cadastro do Cliente")
-    janela_cadastro.configure(bg='white')
+       #Função para abrir a janela de cadastro
+       def abrir_cadastro():
+          janela_cadastro = tk.Toplevel()
+          janela_cadastro.title("Cadastro do Cliente")
+          janela_cadastro.configure(bg='white')
 
     # Label e entrada para nome
     label_nome = tk.Label(janela_cadastro, text="Nome:", fg='black', bg='white', font='Georgia 10 bold')
@@ -163,27 +162,24 @@ def abrir_cadastro():
     botao_cadastrar.grid(row=3, column=0, columnspan=2, pady=10)
 
 
-#Janela principal
-janela = tk.Tk()
-janela.title("Janela Principal")
-janela.configure(bg='black')
+     #Janela principal
+       janela = tk.Tk()
+       janela.title("Janela Principal")
+       janela.configure(bg='black')
 
-mensagem = tk.Label(
-    janela, text="La Class Sport Bike", fg='black', bg='beige', width=65, height=7, font='Georgia 25 bold')
-mensagem.grid(row=1, column=1, columnspan=2, sticky="NSEW")
+       mensagem = tk.Label(
+           janela, text="La Class Sport Bike", fg='black', bg='beige', width=65, height=7, font='Georgia 25 bold')
+       mensagem.grid(row=1, column=1, columnspan=2, sticky="NSEW")
 
-#Botão para abrir a página de busca de produtos
-botao_produtos = tk.Button(janela, text="Página de busca de produtos", fg='white', bg='black', command=abrir_janela)
-botao_produtos.grid(row=2, columnspan=3, pady=10)
+       #Botão para abrir a página de busca de produtos
+       botao_produtos = tk.Button(janela, text="Página de busca de produtos", fg='white', bg='black', command=abrir_janela)
+       botao_produtos.grid(row=2, columnspan=3, pady=10)
 
-Botão para abrir a página de cadastro
-botao_cadastro = tk.Button(janela, text="Página de cadastro", fg='white', bg='black', command=abrir_cadastro)
-botao_cadastro.grid(row=3, columnspan=3, pady=10)
+       #Botão para abrir a página de cadastro
+       botao_cadastro = tk.Button(janela, text="Página de cadastro", fg='white', bg='black', command=abrir_cadastro)
+       botao_cadastro.grid(row=3, columnspan=3, pady=10)
 
-janela.mainloop()
-
-
-   
+       janela.mainloop()
 
 
 # contato
