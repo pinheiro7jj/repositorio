@@ -13,7 +13,7 @@ def abrir_janela():
 
     # Mensagem do sistema
     mensagem = tk.Label(
-        janela2, text="Buscar Produtos", fg='white', bg='black', width=65, height=5, font='Georgia 25 bold')
+        janela2, text="Produtos", fg='black', bg='beige', width=65, height=5, font='Georgia 25 bold')
     mensagem.grid(row=0, column=0, columnspan=3, sticky="NSEW")
 
     # Dicionário de produtos
